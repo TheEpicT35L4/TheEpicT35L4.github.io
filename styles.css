@@ -1,0 +1,106 @@
+:root{
+  --bg:#0f1720;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#2dd4bf;
+  --glass: rgba(255,255,255,0.03);
+  --gap:14px;
+  --maxWidth:1200px;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#071021 0%, #0b1320 100%);
+  color:#e6eef6;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+}
+.topbar{
+  width:100%;
+  max-width:var(--maxWidth);
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:18px;
+}
+.topbar h1{margin:0;font-size:1.05rem}
+.ticker{
+  flex:1;
+  margin-left:18px;
+  padding:8px 12px;
+  background:var(--glass);
+  border-radius:8px;
+  color:var(--muted);
+  min-height:40px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  font-weight:600;
+}
+
+.grid{
+  width:100%;
+  max-width:var(--maxWidth);
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:var(--gap);
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border:1px solid rgba(255,255,255,0.04);
+  padding:10px;
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  min-height:220px;
+}
+
+.card h3{margin:0;font-size:0.98rem}
+.card .meta{color:var(--muted);font-size:0.85rem}
+.media{
+  width:100%;
+  aspect-ratio:16/9;
+  background:#000;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.media iframe, .media video, .media audio{
+  width:100%;
+  height:100%;
+  display:block;
+  border:0;
+}
+
+.headlines{
+  display:block;
+  margin-top:6px;
+  font-size:0.9rem;
+  color:var(--muted);
+  overflow:auto;
+  max-height:110px;
+}
+.headlines ul{margin:0;padding-left:18px}
+.controls{display:flex;gap:8px;align-items:center}
+.btn{
+  background:transparent;
+  color:var(--accent);
+  border:1px solid rgba(45,212,191,0.12);
+  padding:6px 8px;
+  border-radius:6px;
+  font-weight:600;
+  cursor:pointer;
+}
+.footer{margin-top:18px;color:var(--muted);font-size:0.85rem}
+@media (max-width:600px){
+  .topbar{flex-direction:column;align-items:stretch;gap:8px}
+  .ticker{margin-left:0}
+}
