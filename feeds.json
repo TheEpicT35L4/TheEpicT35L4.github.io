@@ -1,0 +1,35 @@
+[
+  {
+    "type": "youtube_channel",
+    "name": "BBC News (live)",
+    "channelId": "UC16niRr50-MSBwiO3YDb3RA",
+    "rss": "http://feeds.bbci.co.uk/news/world/rss.xml",
+    "source": "BBC"
+  },
+  {
+    "type": "youtube_channel",
+    "name": "Al Jazeera (live)",
+    "channelId": "UCNye-wNBqNL5ZzHSJj3l8Bg",
+    "rss": "https://www.aljazeera.com/xml/rss/all.xml",
+    "source": "Al Jazeera"
+  },
+  {
+    "type": "rss",
+    "name": "Reuters - World",
+    "rss": "http://feeds.reuters.com/Reuters/worldNews",
+    "source": "Reuters"
+  },
+  {
+    "type": "rss",
+    "name": "NPR Top Stories",
+    "rss": "https://www.npr.org/rss/rss.php?id=1001",
+    "source": "NPR"
+  },
+  {
+    "type": "audio",
+    "name": "Sample Radio (placeholder)",
+    "url": "https://stream.live/vplaceholder.mp3",
+    "rss": "",
+    "source": "Radio"
+  }
+]
